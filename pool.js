@@ -26,10 +26,6 @@ function handle_database(req, res){
 				res.json(rows);
 			}
 		});
-		connetion.on('error',function(err){
-			res.json({"code":100,"status":"Error in connetion to database"});
-			return;
-		})
 	});
 }
 
